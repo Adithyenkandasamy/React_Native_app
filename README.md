@@ -1,10 +1,10 @@
 # React_Native_app
-[link](https://www.youtube.com/watch?v=4nVoLX2taFg)
-Expo
-Native Wind
-Clerk 
-Posthog
-Code Rabbit
-EAS
+https://www.youtube.com/watch?v=4nVoLX2taFg
+<br>Expo
+<br>Native Wind
+<br>Clerk 
+<br>Posthog
+<br>Code Rabbit
+<br>EAS
 
-56
+56 mins completed
