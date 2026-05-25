@@ -1,0 +1,2 @@
+- i have understand the navigation system 
+- and understand the use of code rabbit 
