@@ -5,7 +5,7 @@ export default function Index() {
   return (
     <View className="flex-1 items-center justify-center bg-background">
       <Text className="text-xl font-bold text-success">
-          hi dude
+          Welcome to Nativewind!
       </Text>
       <Link href="/onboarding" className="mt-4 rounded bg-primary text-white p-4">
         Go to Onboarding
