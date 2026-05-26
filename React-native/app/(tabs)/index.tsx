@@ -3,10 +3,14 @@ import { Text,Image,View } from "react-native";
 import {styled} from "nativewind";
 import { SafeAreaView as RNSafeAreaView} from "react-native-safe-area-context";
 import images from "@/constants/images";
-import { HOME_BALANCE, HOME_USER } from "@/constants/data";
+import { HOME_BALANCE, HOME_USER, UPCOMING_SUBSCRIPTIONS } from "@/constants/data";
 import { icons } from "@/constants/icons";
 import { formatCurrency } from "@/lib/utils";
 import dayjs from 'dayjs';
+import ListHeading from "@/components/ListHeading";
+import UpcomingSubscriptionCard from "@/components/UpcomingSubscriptionCard";
+import React from "react";
+import { FlatList } from "react-native";
 
 const SafeAreaView = styled(RNSafeAreaView);
 export default function Index() {
@@ -29,6 +33,22 @@ export default function Index() {
               {dayjs(HOME_BALANCE.nextRenewalDate).format('MM/DD')}
             </Text>
           </View>
+        </View>
+
+        <View>
+          <ListHeading title="Upcoming"/>
+          <FlatList 
+              data={UPCOMING_SUBSCRIPTIONS} 
+              renderItem={({ item }) => (<UpcomingSubscriptionCard {...item}/>)}
+              keyExtractor={( item ) => item.id}
+              horizontal
+              showsHorizontalScrollIndicator={ false }
+              ListEmptyComponent={<Text className="home-empty-state">No upcoming subscriptions</Text>}
+          />
+        </View>
+
+        <View>
+          <ListHeading title="All Subscriptions"/>
         </View>
     </SafeAreaView>
   );

@@ -1,2 +1,3 @@
 - i have understand the navigation system 
 - and understand the use of code rabbit 
+- completed 1.42.19
