@@ -2,7 +2,10 @@ node_modules
 dist
 build
 *.log
-*.lock
+# Preserve package-lock.json for npm ci and EAS Build uploads
+!package-lock.json
+yarn.lock
+pnpm-lock.yaml
 *.tmp
 *.bak
 *.swp
