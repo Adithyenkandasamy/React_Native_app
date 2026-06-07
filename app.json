@@ -1,17 +1,19 @@
 {
   "expo": {
-    "name": "react_native-recurrly",
+    "name": "Recurrly",
     "slug": "react_native-recurrly",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/icons/icon.png",
     "scheme": "reactnativerecurrly",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
+      "bundleIdentifier":"com.adhii.recurrly",
       "supportsTablet": true
     },
     "android": {
+      "package": "com.adhii.recurrly",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
