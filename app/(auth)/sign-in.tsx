@@ -56,14 +56,14 @@ const SignIn = () => {
                     });
                     posthog.capture('user_signed_in', { email: emailAddress });
 
-                    const url = decorateUrl('/(tabs)');
+                    const url = decorateUrl('/');
                     if (url.startsWith('http')) {
                         // Only use window.location on web platform
                         if (typeof window !== 'undefined' && window.location) {
                             window.location.href = url;
                         } else {
                             // On native, just use router navigation
-                            router.replace('/(tabs)' as Href);
+                            router.replace('/' as Href);
                         }
                     } else {
                         router.replace(url as Href);
@@ -105,14 +105,14 @@ const SignIn = () => {
                     });
                     posthog.capture('user_signed_in', { email: emailAddress });
 
-                    const url = decorateUrl('/(tabs)');
+                    const url = decorateUrl('/');
                     if (url.startsWith('http')) {
                         // Only use window.location on web platform
                         if (typeof window !== 'undefined' && window.location) {
                             window.location.href = url;
                         } else {
                             // On native, just use router navigation
-                            router.replace('/(tabs)' as Href);
+                            router.replace('/' as Href);
                         }
                     } else {
                         router.replace(url as Href);
@@ -142,11 +142,11 @@ const SignIn = () => {
                             <View className="auth-brand-block">
                                 <View className="auth-logo-wrap">
                                     <View className="auth-logo-mark">
-                                        <Text className="auth-logo-mark-text">R</Text>
+                                        <Text className="auth-logo-mark-text">S</Text>
                                     </View>
                                     <View>
-                                        <Text className="auth-wordmark">Recurrly</Text>
-                                        <Text className="auth-wordmark-sub">SUBSCRIPTIONS</Text>
+                                        <Text className="auth-wordmark">Subscriptions</Text>
+                                        <Text className="auth-wordmark-sub">TRACKER</Text>
                                     </View>
                                 </View>
                                 <Text className="auth-title">Verify your identity</Text>
@@ -226,11 +226,11 @@ const SignIn = () => {
                         <View className="auth-brand-block">
                             <View className="auth-logo-wrap">
                                 <View className="auth-logo-mark">
-                                    <Text className="auth-logo-mark-text">R</Text>
+                                    <Text className="auth-logo-mark-text">S</Text>
                                 </View>
                                 <View>
-                                    <Text className="auth-wordmark">Recurrly</Text>
-                                    <Text className="auth-wordmark-sub">SUBSCRIPTIONS</Text>
+                                    <Text className="auth-wordmark">Subscriptions</Text>
+                                    <Text className="auth-wordmark-sub">TRACKER</Text>
                                 </View>
                             </View>
                             <Text className="auth-title">Welcome back</Text>

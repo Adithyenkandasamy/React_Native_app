@@ -68,14 +68,14 @@ const SignUp = () => {
                     });
                     posthog.capture('user_signed_up', { email: emailAddress });
 
-                    const url = decorateUrl('/(tabs)');
+                    const url = decorateUrl('/');
                     if (url.startsWith('http')) {
                         // Only use window.location on web platform
                         if (typeof window !== 'undefined' && window.location) {
                             window.location.href = url;
                         } else {
                             // On native, just use router navigation
-                            router.replace('/(tabs)' as Href);
+                            router.replace('/' as Href);
                         }
                     } else {
                         router.replace(url as Href);
@@ -114,11 +114,11 @@ const SignUp = () => {
                             <View className="auth-brand-block">
                                 <View className="auth-logo-wrap">
                                     <View className="auth-logo-mark">
-                                        <Text className="auth-logo-mark-text">R</Text>
+                                        <Text className="auth-logo-mark-text">S</Text>
                                     </View>
                                     <View>
-                                        <Text className="auth-wordmark">Recurrly</Text>
-                                        <Text className="auth-wordmark-sub">SUBSCRIPTIONS</Text>
+                                        <Text className="auth-wordmark">Subscriptions</Text>
+                                        <Text className="auth-wordmark-sub">TRACKER</Text>
                                     </View>
                                 </View>
                                 <Text className="auth-title">Verify your email</Text>
@@ -190,11 +190,11 @@ const SignUp = () => {
                         <View className="auth-brand-block">
                             <View className="auth-logo-wrap">
                                 <View className="auth-logo-mark">
-                                    <Text className="auth-logo-mark-text">R</Text>
+                                    <Text className="auth-logo-mark-text">S</Text>
                                 </View>
                                 <View>
-                                    <Text className="auth-wordmark">Recurrly</Text>
-                                    <Text className="auth-wordmark-sub">SUBSCRIPTIONS</Text>
+                                    <Text className="auth-wordmark">Subscriptions</Text>
+                                    <Text className="auth-wordmark-sub">TRACKER</Text>
                                 </View>
                             </View>
                             <Text className="auth-title">Create your account</Text>

@@ -1,4 +1,4 @@
-import {SplashScreen, Stack, usePathname, useGlobalSearchParams} from "expo-router";
+import {SplashScreen, Slot, usePathname, useGlobalSearchParams} from "expo-router";
 import '@/global.css';
 import {useFonts} from "expo-font";
 import {useEffect, useRef} from "react";
@@ -69,7 +69,7 @@ function RootLayoutContent() {
   // Don't render app until both are ready
   if (!fontsLoaded || !authLoaded) return null;
 
-  return <Stack screenOptions={{ headerShown: false }} />;
+  return <Slot />;
 }
 
 export default function RootLayout() {
