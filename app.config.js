@@ -1,4 +1,4 @@
-const appJson = require('./app.json')
+const appJson = require('./app.base.json')
 
 export default {
   expo: {
